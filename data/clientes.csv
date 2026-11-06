@@ -1,0 +1,101 @@
+cliente_id,nombre,carrera,ciudad
+1,Valeria Mamani,Informática,La Paz
+2,Mateo Mamani,Administración,La Paz
+3,Camila Mamani,Diseño,Cochabamba
+4,Santiago Mamani,Ingeniería,El Alto
+5,Luciana Mamani,Comunicación,El Alto
+6,Daniel Mamani,Informática,El Alto
+7,Sofía Mamani,Administración,La Paz
+8,Gabriel Mamani,Diseño,La Paz
+9,Isabella Mamani,Ingeniería,Santa Cruz
+10,Diego Mamani,Comunicación,La Paz
+11,Valeria Flores,Informática,La Paz
+12,Mateo Flores,Administración,La Paz
+13,Camila Flores,Diseño,El Alto
+14,Santiago Flores,Ingeniería,El Alto
+15,Luciana Flores,Comunicación,La Paz
+16,Daniel Flores,Informática,El Alto
+17,Sofía Flores,Administración,Santa Cruz
+18,Gabriel Flores,Diseño,El Alto
+19,Isabella Flores,Ingeniería,Santa Cruz
+20,Diego Flores,Comunicación,Cochabamba
+21,Valeria Quispe,Informática,La Paz
+22,Mateo Quispe,Administración,El Alto
+23,Camila Quispe,Diseño,Santa Cruz
+24,Santiago Quispe,Ingeniería,Cochabamba
+25,Luciana Quispe,Comunicación,Cochabamba
+26,Daniel Quispe,Informática,El Alto
+27,Sofía Quispe,Administración,El Alto
+28,Gabriel Quispe,Diseño,Cochabamba
+29,Isabella Quispe,Ingeniería,La Paz
+30,Diego Quispe,Comunicación,La Paz
+31,Valeria Vargas,Informática,Santa Cruz
+32,Mateo Vargas,Administración,La Paz
+33,Camila Vargas,Diseño,Cochabamba
+34,Santiago Vargas,Ingeniería,Cochabamba
+35,Luciana Vargas,Comunicación,Cochabamba
+36,Daniel Vargas,Informática,La Paz
+37,Sofía Vargas,Administración,Santa Cruz
+38,Gabriel Vargas,Diseño,La Paz
+39,Isabella Vargas,Ingeniería,Santa Cruz
+40,Diego Vargas,Comunicación,La Paz
+41,Valeria Rojas,Informática,Cochabamba
+42,Mateo Rojas,Administración,Cochabamba
+43,Camila Rojas,Diseño,El Alto
+44,Santiago Rojas,Ingeniería,La Paz
+45,Luciana Rojas,Comunicación,La Paz
+46,Daniel Rojas,Informática,El Alto
+47,Sofía Rojas,Administración,Cochabamba
+48,Gabriel Rojas,Diseño,La Paz
+49,Isabella Rojas,Ingeniería,El Alto
+50,Diego Rojas,Comunicación,La Paz
+51,Valeria Condori,Informática,Santa Cruz
+52,Mateo Condori,Administración,Cochabamba
+53,Camila Condori,Diseño,Santa Cruz
+54,Santiago Condori,Ingeniería,Cochabamba
+55,Luciana Condori,Comunicación,El Alto
+56,Daniel Condori,Informática,Cochabamba
+57,Sofía Condori,Administración,Cochabamba
+58,Gabriel Condori,Diseño,El Alto
+59,Isabella Condori,Ingeniería,Cochabamba
+60,Diego Condori,Comunicación,La Paz
+61,Valeria Torres,Informática,El Alto
+62,Mateo Torres,Administración,El Alto
+63,Camila Torres,Diseño,El Alto
+64,Santiago Torres,Ingeniería,Santa Cruz
+65,Luciana Torres,Comunicación,Santa Cruz
+66,Daniel Torres,Informática,Cochabamba
+67,Sofía Torres,Administración,El Alto
+68,Gabriel Torres,Diseño,Cochabamba
+69,Isabella Torres,Ingeniería,La Paz
+70,Diego Torres,Comunicación,El Alto
+71,Valeria Aguilar,Informática,La Paz
+72,Mateo Aguilar,Administración,Cochabamba
+73,Camila Aguilar,Diseño,Santa Cruz
+74,Santiago Aguilar,Ingeniería,Cochabamba
+75,Luciana Aguilar,Comunicación,La Paz
+76,Daniel Aguilar,Informática,El Alto
+77,Sofía Aguilar,Administración,Cochabamba
+78,Gabriel Aguilar,Diseño,El Alto
+79,Isabella Aguilar,Ingeniería,Santa Cruz
+80,Diego Aguilar,Comunicación,Santa Cruz
+81,Valeria López,Informática,Santa Cruz
+82,Mateo López,Administración,El Alto
+83,Camila López,Diseño,Cochabamba
+84,Santiago López,Ingeniería,El Alto
+85,Luciana López,Comunicación,El Alto
+86,Daniel López,Informática,Cochabamba
+87,Sofía López,Administración,Santa Cruz
+88,Gabriel López,Diseño,Santa Cruz
+89,Isabella López,Ingeniería,Cochabamba
+90,Diego López,Comunicación,El Alto
+91,Valeria Rivera,Informática,El Alto
+92,Mateo Rivera,Administración,Santa Cruz
+93,Camila Rivera,Diseño,La Paz
+94,Santiago Rivera,Ingeniería,La Paz
+95,Luciana Rivera,Comunicación,La Paz
+96,Daniel Rivera,Informática,El Alto
+97,Sofía Rivera,Administración,El Alto
+98,Gabriel Rivera,Diseño,Santa Cruz
+99,Isabella Rivera,Ingeniería,La Paz
+100,Diego Rivera,Comunicación,Santa Cruz
