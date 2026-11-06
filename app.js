@@ -32,7 +32,7 @@ const tools = [
     "filter, orderBy, limit / HAVING, ORDER BY, LIMIT",
     "pedidos.groupBy(\"categoria\").agg(\n    F.sum(\"cantidad\").alias(\"unidades\")\n).filter(F.col(\"unidades\") > 100).orderBy(\n    F.col(\"unidades\").desc(), F.col(\"categoria\").asc()\n).limit(2).show(1000, truncate=False)",
     "SELECT categoria, SUM(cantidad) AS unidades\nFROM pedidos GROUP BY categoria\nHAVING SUM(cantidad) > 100\nORDER BY unidades DESC, categoria ASC LIMIT 2",
-    "WHERE filtra filas antes de agrupar; HAVING filtra grupos después. En PySpark usa filter sobre el DataFrame agregado. ASC ordena de menor a mayor y DESC de mayor a menor."
+    "WHERE filtra filas antes de agrupar; HAVING filtra grupos después. En PySpark usa filter sobre el DataFrame agregado. ASC aplica orden ascendente y DESC aplica orden descendente."
   ],
   [
     "Combinar clientes y pedidos",
@@ -61,7 +61,7 @@ document.querySelector('#equivalence-list').innerHTML=tools.map((t,i)=>`<details
 const challenges=[
   {
     "title": "Compras de alto importe en un periodo",
-    "level": "NIVEL 1",
+    "level": "CONSULTA 1",
     "tags": "Fechas, filtros, cálculo, top",
     "body": "Obtén los 10 pedidos de mayor importe realizados desde el 1 de marzo de 2026, incluido, hasta el 1 de mayo de 2026, excluido. Considera solo Libros o Tecnología, con cantidad mayor o igual a 2 e importe mayor o igual a 500 Bs. Calcula importe como cantidad * precio_unitario y muéstralo con 2 decimales. Ordena por importe descendente y pedido_id ascendente.",
     "output": "pedido_id, fecha, categoria, cantidad, importe",
@@ -69,7 +69,7 @@ const challenges=[
   },
   {
     "title": "Categorías con actividad sostenida",
-    "level": "NIVEL 2",
+    "level": "CONSULTA 2",
     "tags": "Agrupación, promedio, HAVING",
     "body": "Usa únicamente los pedidos del primer trimestre: fecha mayor o igual a 2026-01-01 y menor que 2026-04-01. Por categoría, calcula numero_pedidos, unidades_vendidas, ingresos y ticket_promedio (promedio del importe de cada pedido). Conserva las categorías con al menos 120 pedidos y más de 400 unidades vendidas. Redondea ingresos y ticket_promedio a 2 decimales al final. Ordena por ingresos descendente y categoria ascendente.",
     "output": "categoria, numero_pedidos, unidades_vendidas, ingresos, ticket_promedio",
@@ -77,7 +77,7 @@ const challenges=[
   },
   {
     "title": "Ventas por ciudad y carrera",
-    "level": "NIVEL 3",
+    "level": "CONSULTA 3",
     "tags": "INNER JOIN, varias claves, agregación",
     "body": "Combina clientes y pedidos. Considera las compras de Tecnología del primer semestre de 2026 (desde 2026-01-01 incluido hasta 2026-07-01 excluido). Por ciudad y carrera, calcula numero_pedidos, unidades_vendidas e ingresos. Conserva los grupos con al menos 8 pedidos y presenta los 6 con mayores ingresos. Redondea ingresos a 2 decimales al final. Ordena por ingresos descendente, ciudad ascendente y carrera ascendente.",
     "output": "ciudad, carrera, numero_pedidos, unidades_vendidas, ingresos",
@@ -85,7 +85,7 @@ const challenges=[
   },
   {
     "title": "Ciudades con clientes sin compras",
-    "level": "NIVEL 4",
+    "level": "CONSULTA 4",
     "tags": "LEFT JOIN, nulos, agrupación",
     "body": "Identifica los clientes que no tienen ningún pedido en todo el dataset. Agrúpalos por ciudad y calcula clientes_sin_pedidos. Muestra únicamente las ciudades que tengan al menos 2 de estos clientes. Ordena por clientes_sin_pedidos descendente y ciudad ascendente.",
     "output": "ciudad, clientes_sin_pedidos",
@@ -93,7 +93,7 @@ const challenges=[
   },
   {
     "title": "Resumen de compras de todos los clientes",
-    "level": "NIVEL 5",
+    "level": "CONSULTA 5",
     "tags": "LEFT JOIN, agregación, nulos, promedio",
     "body": "Genera un resumen para los 100 clientes, incluidos quienes no tienen pedidos. Muestra numero_pedidos, unidades_vendidas, gasto_total y ticket_promedio (promedio del importe de sus pedidos), junto con sus datos de cliente. Los cuatro indicadores deben ser cero cuando no existan compras. Redondea gasto_total y ticket_promedio a 2 decimales al final. Ordena por gasto_total descendente y cliente_id ascendente, sin limitar las filas.",
     "output": "cliente_id, nombre, carrera, ciudad, numero_pedidos, unidades_vendidas, gasto_total, ticket_promedio",
