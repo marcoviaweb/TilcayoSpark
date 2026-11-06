@@ -26,6 +26,6 @@ Se comprobaron los enlaces internos, los recursos y ambas descargas mediante HTT
 
 Los ocho ejemplos SQL y las cinco consignas se ejecutaron sobre los CSV con SQLite para comprobar su viabilidad. Los retos producen respectivamente 10, 3, 6, 3 y 100 filas. El último conserva los ocho clientes sin compras con indicadores cero. Se revisó la sintaxis de los ejemplos Python y del JavaScript. Esta comprobación no sustituye la ejecución en Spark: PySpark no está instalado localmente y no se dispone de una sesión conectada de Databricks. No se han validado en ese entorno los tipos resultantes ni los planes de ejecución.
 
-La página no ejecuta Spark: los estudiantes trabajan en Databricks. Las casillas registran autoevaluación y no corrigen consultas. La preparación requiere catálogo, esquema y cómputo con permisos. Las soluciones de los retos no se incluyen en el sitio.
+La página no ejecuta Spark: los estudiantes trabajan en Databricks. Las casillas registran autoevaluación y no corrigen consultas. La preparación lee ambos CSV desde un volumen con spark.read.csv(), define los tipos y crea vistas temporales para SQL en la misma sesión. Requiere cómputo y permisos de lectura del volumen; no requiere tablas permanentes. Las soluciones de los retos no se incluyen en el sitio.
 
-Referencias: https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/dataframe.html y https://docs.databricks.com/aws/en/ingestion/create-or-modify-table
+Referencias: https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/dataframe.html y https://docs.databricks.com/aws/en/query/formats/csv
